@@ -32,7 +32,7 @@ if command -v speedtest >/dev/null 2>&1; then
 else
     echo "Speedtest CLI belum terpasang. Menginstal..."
     curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash
-    sudo apt install speedtest -y
+    sudo apt-get install speedtest-cli -y
     echo "Menjalankan Speedtest..."
     speedtest --simple
 fi
